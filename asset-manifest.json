@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/NahirIsray24.github.io/challengenahir/static/css/main.79be49c2.css",
+    "main.js": "/NahirIsray24.github.io/challengenahir/static/js/main.de9fa814.js",
+    "static/js/453.dcb50c73.chunk.js": "/NahirIsray24.github.io/challengenahir/static/js/453.dcb50c73.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/NahirIsray24.github.io/challengenahir/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/NahirIsray24.github.io/challengenahir/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/NahirIsray24.github.io/challengenahir/index.html",
+    "main.79be49c2.css.map": "/NahirIsray24.github.io/challengenahir/static/css/main.79be49c2.css.map",
+    "main.de9fa814.js.map": "/NahirIsray24.github.io/challengenahir/static/js/main.de9fa814.js.map",
+    "453.dcb50c73.chunk.js.map": "/NahirIsray24.github.io/challengenahir/static/js/453.dcb50c73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79be49c2.css",
+    "static/js/main.de9fa814.js"
+  ]
+}
