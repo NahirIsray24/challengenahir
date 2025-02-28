@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# Frontend Challenge - Lista de Publicaciones
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://nahirisray24.github.io/challengenahir/
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Este proyecto es una aplicación web que permite gestionar una lista de publicaciones utilizando datos de la API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com). 
 
-### `npm start`
+El proyecto está construido con **React** para el frontend y utiliza **SCSS** y **Bootstrap** para los estilos y la interfaz de usuario. Además, se implementaron **pruebas automatizadas** con **Cypress** para asegurar que la funcionalidad y la lógica de negocio sean correctas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Visualización de publicaciones**: La aplicación carga y muestra una lista de publicaciones en una tabla. Cada fila incluye el título y un fragmento del contenido de la publicación.
+- **Página de detalles de publicación**: Al hacer clic en una publicación, se navega a una página de detalles donde se muestra el título completo, el contenido y el autor de la publicación, además de los comentarios asociados.
+- **Filtrado de publicaciones**: Los usuarios pueden buscar publicaciones por título utilizando un campo de búsqueda.
+- **Agregar nueva publicación**: Los usuarios pueden agregar nuevas publicaciones introduciendo un título y contenido en un formulario.
+- **Editar y eliminar publicaciones**: Las publicaciones pueden ser editadas o eliminadas directamente desde la tabla.
 
-### `npm test`
+## Tecnologías utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: 
+  - React
+  - SCSS
+  - Bootstrap
+- **Pruebas**: Cypress (para pruebas de funcionalidad y lógica de negocio)
+- **API**: JSONPlaceholder
 
-### `npm run build`
+## Instrucciones de instalación y ejecución local
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Requisitos previos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Asegúrate de tener **Node.js** y **npm** instalados en tu máquina.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pasos para ejecutar el proyecto
 
-### `npm run eject`
+1. Clona este repositorio en tu máquina local:
+    ```bash
+    git clone <https://github.com/NahirIsray24/challengenahir.git>
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navega al directorio del proyecto:
+    ```bash
+    cd publicaciones-app
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instala las dependencias necesarias:
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Inicia la aplicación:
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Abre tu navegador y ve a `http://localhost:3000` para ver la aplicación en ejecución.
 
-## Learn More
+### Ejecutar las pruebas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para ejecutar las pruebas con Cypress, sigue estos pasos:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Asegúrate de tener Cypress instalado (si no lo tienes, puedes instalarlo con el siguiente comando):
+    ```bash
+    npm install cypress --save-dev
+    ```
 
-### Code Splitting
+2. Abre Cypress:
+    ```bash
+    npx cypress open
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Selecciona la suite de pruebas que deseas ejecutar, y las pruebas se ejecutarán en el navegador.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Pruebas realizadas
 
-### Making a Progressive Web App
+Se realizaron pruebas automatizadas con **Cypress** para verificar la funcionalidad y la lógica de negocio de la aplicación. A continuación, se detallan algunas de las pruebas realizadas:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 1. **Prueba de carga de publicaciones desde la API**
+   - **Descripción**: Verifica que las publicaciones se carguen correctamente desde la API cuando la aplicación se inicia.
+   - **Resultado esperado**: Las publicaciones deben cargarse y mostrarse en la tabla.
 
-### Advanced Configuration
+### 2. **Mostrar título y fragmento del contenido de las publicaciones**
+   - **Descripción**: Asegura que cada publicación muestra su título y un fragmento del contenido (los primeros 100 caracteres).
+   - **Resultado esperado**: El título debe ser visible y el contenido debe estar truncado correctamente si excede los 100 caracteres.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 3. **Navegar a la página de detalles de una publicación**
+   - **Descripción**: Verifica que al hacer clic en el título de una publicación se navegue correctamente a la página de detalles.
+   - **Resultado esperado**: La URL debe cambiar y mostrar los detalles de la publicación seleccionada.
 
-### Deployment
+### 4. **Filtrar publicaciones por título**
+   - **Descripción**: Verifica que el campo de búsqueda filtre las publicaciones correctamente.
+   - **Resultado esperado**: Solo deben mostrarse las publicaciones que contengan el texto ingresado en el título.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 5. **Agregar una nueva publicación**
+   - **Descripción**: Verifica que los usuarios puedan agregar nuevas publicaciones.
+   - **Resultado esperado**: La nueva publicación debe aparecer en la tabla con el título y contenido introducido.
 
-### `npm run build` fails to minify
+### 6. **Editar una publicación existente**
+   - **Descripción**: Verifica que los usuarios puedan editar una publicación existente.
+   - **Resultado esperado**: Los cambios deben reflejarse correctamente en la tabla de publicaciones.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 7. **Eliminar una publicación**
+   - **Descripción**: Verifica que los usuarios puedan eliminar una publicación.
+   - **Resultado esperado**: La publicación debe desaparecer de la tabla después de ser eliminada.
+
+### 8. **Validación de campos vacíos al agregar una publicación**
+   - **Descripción**: Verifica que no se pueda agregar una publicación con campos vacíos.
+   - **Resultado esperado**: El sistema debe mostrar una alerta y no permitir agregar una publicación con título o contenido vacío.
+
+### 9. **Limpieza de campos después de agregar una publicación**
+   - **Descripción**: Verifica que los campos de entrada se limpien después de agregar una publicación.
+   - **Resultado esperado**: Los campos de título y contenido deben quedar vacíos después de que se haya agregado la publicación.
+
+### 10. **Mostrar comentarios de la publicación**
+   - **Descripción**: Verifica que los comentarios asociados a una publicación se muestren correctamente en la página de detalles.
+   - **Resultado esperado**: Los comentarios deben estar presentes y mostrar el nombre del usuario y el texto del comentario.
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! 
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
