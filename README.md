@@ -78,43 +78,36 @@ Se realizaron pruebas automatizadas con **Cypress** para verificar la funcionali
 
 ### 1. **Prueba de carga de publicaciones desde la API**
    - **Descripción**: Verifica que las publicaciones se carguen correctamente desde la API cuando la aplicación se inicia.
-   - **Resultado esperado**: Las publicaciones deben cargarse y mostrarse en la tabla.
 
 ### 2. **Mostrar título y fragmento del contenido de las publicaciones**
    - **Descripción**: Asegura que cada publicación muestra su título y un fragmento del contenido (los primeros 100 caracteres).
-   - **Resultado esperado**: El título debe ser visible y el contenido debe estar truncado correctamente si excede los 100 caracteres.
 
 ### 3. **Navegar a la página de detalles de una publicación**
    - **Descripción**: Verifica que al hacer clic en el título de una publicación se navegue correctamente a la página de detalles.
-   - **Resultado esperado**: La URL debe cambiar y mostrar los detalles de la publicación seleccionada.
-
+   - 
 ### 4. **Filtrar publicaciones por título**
    - **Descripción**: Verifica que el campo de búsqueda filtre las publicaciones correctamente.
-   - **Resultado esperado**: Solo deben mostrarse las publicaciones que contengan el texto ingresado en el título.
 
 ### 5. **Agregar una nueva publicación**
    - **Descripción**: Verifica que los usuarios puedan agregar nuevas publicaciones.
-   - **Resultado esperado**: La nueva publicación debe aparecer en la tabla con el título y contenido introducido.
 
 ### 6. **Editar una publicación existente**
    - **Descripción**: Verifica que los usuarios puedan editar una publicación existente.
-   - **Resultado esperado**: Los cambios deben reflejarse correctamente en la tabla de publicaciones.
 
 ### 7. **Eliminar una publicación**
    - **Descripción**: Verifica que los usuarios puedan eliminar una publicación.
-   - **Resultado esperado**: La publicación debe desaparecer de la tabla después de ser eliminada.
 
 ### 8. **Validación de campos vacíos al agregar una publicación**
    - **Descripción**: Verifica que no se pueda agregar una publicación con campos vacíos.
-   - **Resultado esperado**: El sistema debe mostrar una alerta y no permitir agregar una publicación con título o contenido vacío.
 
 ### 9. **Limpieza de campos después de agregar una publicación**
    - **Descripción**: Verifica que los campos de entrada se limpien después de agregar una publicación.
-   - **Resultado esperado**: Los campos de título y contenido deben quedar vacíos después de que se haya agregado la publicación.
 
 ### 10. **Mostrar comentarios de la publicación**
    - **Descripción**: Verifica que los comentarios asociados a una publicación se muestren correctamente en la página de detalles.
-   - **Resultado esperado**: Los comentarios deben estar presentes y mostrar el nombre del usuario y el texto del comentario.
+  
+## Resultados
+Todas las pruebas fueron ejecutadas con éxito, confirmando el correcto funcionamiento de la aplicación.
 
 ## Contribuciones
 
