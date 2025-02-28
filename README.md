@@ -43,7 +43,7 @@ Asegúrate de tener **Node.js** y **npm** instalados en tu máquina.
     cd publicaciones-app
     ```
 
-3. Instala las dependencias necesarias:
+3. Instala las dependencias necesarias (Bootstrap,React Router,Cypress)
     ```bash
     npm install
     ```
