@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/challengenahir/static/css/main.6a6bbc73.css",
-    "main.js": "/challengenahir/static/js/main.a3266584.js",
+    "main.js": "/challengenahir/static/js/main.29916865.js",
     "static/js/453.dcb50c73.chunk.js": "/challengenahir/static/js/453.dcb50c73.chunk.js",
     "static/media/bootstrap-icons.woff?": "/challengenahir/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/challengenahir/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "index.html": "/challengenahir/index.html",
     "main.6a6bbc73.css.map": "/challengenahir/static/css/main.6a6bbc73.css.map",
-    "main.a3266584.js.map": "/challengenahir/static/js/main.a3266584.js.map",
+    "main.29916865.js.map": "/challengenahir/static/js/main.29916865.js.map",
     "453.dcb50c73.chunk.js.map": "/challengenahir/static/js/453.dcb50c73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a6bbc73.css",
-    "static/js/main.a3266584.js"
+    "static/js/main.29916865.js"
   ]
 }
